@@ -1,0 +1,5 @@
+# 발표 화면 파일만 게시
+*
+!.gitignore
+!.nojekyll
+!index.html

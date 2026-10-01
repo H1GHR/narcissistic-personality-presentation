@@ -44,13 +44,14 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .enriched .body{margin-top:22px}
 .enriched .lead{font-size:23px;line-height:1.45}
 .enriched .label{margin-bottom:12px;font-size:17px}
-.enriched .concept{padding:20px 24px}
+.enriched .concept{padding:8px 0 18px;border:0;background:transparent}
 .enriched .concept h3{font-size:29px}
 .enriched .concept>p:last-child{font-size:24px;line-height:1.55;margin-top:14px}
 .enriched .concept-link{font-size:22px;line-height:1.5;margin-top:18px}
 .enriched .concept-link strong{color:var(--obs);font-weight:650}
 .reading-note{font-size:18px;line-height:1.5;color:var(--muted);margin-top:12px}
-.explain-band{display:grid;grid-template-columns:166px 1fr;gap:24px;padding:20px 24px;background:var(--tint);margin-top:22px;border-left:3px solid var(--obs);font-size:23px;line-height:1.5}
+.explain-band{display:grid;grid-template-columns:166px 1fr;gap:24px;padding:20px 0;background:transparent;margin-top:22px;border-top:1px solid var(--line);font-size:23px;line-height:1.5}
+.slide[aria-labelledby="title3"] .explain-band{padding:20px 24px;background:var(--tint);border:0}
 .explain-band>strong{font-size:22px;color:var(--obs)}
 .definition-line{display:flex;gap:24px;font-size:24px;line-height:1.5;margin-bottom:22px}
 .definition-line strong{flex-shrink:0;color:var(--obs)}
@@ -63,9 +64,9 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .enriched .life-grid article{padding:20px 0 6px}
 .enriched .life-grid h3{font-size:27px}
 .enriched .life-grid article>p:last-child{font-size:23px;line-height:1.5;margin-top:14px}
-.enriched .three-concepts{gap:22px}
+.enriched .three-concepts{gap:40px}
 .enriched .three-concepts .concept>p:last-child{font-size:23px}
-.cycle-line{margin-top:22px;padding:18px 24px;background:var(--tint);font-size:24px;line-height:1.5}
+.cycle-line{margin-top:28px;padding:22px 0 0;border-top:1px solid var(--line);font-size:24px;line-height:1.5}
 .cycle-line strong{display:block;font-size:18px;color:var(--obs);margin-bottom:8px}
 .enriched .defense-table td:first-child{width:28%}
 .enriched .defense-table td:nth-child(2){width:35%}
@@ -85,7 +86,7 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .enriched .theory-table td{font-size:22px;padding:14px 18px}
 .enriched .theory-table td:first-child{font-size:20px;width:15%}
 .care-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.care-steps article{background:var(--tint);padding:18px}
+.care-steps article{padding:4px 8px 10px 0}
 .care-steps article>span{display:block;font:italic 24px Georgia,serif;color:var(--obs);margin-bottom:10px}
 .care-steps h3{font-size:26px;line-height:1.4}
 .care-steps p{font-size:21px;line-height:1.45;margin-top:10px}
@@ -94,7 +95,7 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .enriched .differential td{font-size:21px;line-height:1.4;padding:10px 16px}
 .enriched .differential td:first-child{width:21%}
 .enriched .differential td:nth-child(2){width:38%}
-.enriched.ending .end-quote{font-size:44px;line-height:1.45}
+.enriched.ending .end-quote{font-size:44px;line-height:1.45;letter-spacing:-.025em}
 .enriched.ending .closing-points{font-size:22px;gap:32px;margin-top:28px}
 .enriched.ending .closing-points span{display:block;font-size:23px;line-height:1.5;margin-top:12px}
 .enriched.ending .reflection{font-size:23px;margin-top:24px;line-height:1.5}
@@ -104,6 +105,12 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .title-concept{flex-shrink:0}
 .title-question{font-size:28px;font-weight:500;letter-spacing:-.025em;color:var(--muted);border-left:1px solid var(--line);padding-left:20px}
 .cover .title-question{color:#cad2c8;border-color:#63716a}
+/* 정적인 목차와 실시간 번역을 내용의 위계로 구분한다. */
+.legend{gap:24px}
+.legend span{border:0;padding:7px 0}
+.translation-panel{border-top:0}
+.enriched.ending .closing-points{margin-top:32px}
+.enriched.ending .reflection{margin-top:28px}
 </style>
 </head>
 <body>

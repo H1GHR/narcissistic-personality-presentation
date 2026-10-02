@@ -116,6 +116,47 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .two-scenes .scene-tabs{margin-bottom:16px}
 .enriched .defense-table td{padding-top:12px;padding-bottom:12px}
 .enriched:has(.defense-table) .concept-link{margin-top:16px}
+/* 정의·비교·보충 설명을 구분하는 공통 패널 */
+:root{--panel-border:#c7cec6;--panel-surface:#fcfbf7;--panel-tint:#e8eee6;--panel-note:#efeee8}
+.enriched table{border:1px solid var(--panel-border);background:var(--panel-surface)}
+.enriched thead{background:var(--panel-note)}
+.enriched th{padding:6px 16px;border-bottom:1px solid var(--panel-border)}
+.enriched th+th,.enriched td+td{border-left:1px solid var(--panel-border)}
+.enriched td{border-top-color:var(--panel-border)}
+.enriched .equal-table td{padding:12px 16px}
+.enriched .theory-table th:nth-child(2){background:#edf0e9}
+.enriched .theory-table th:nth-child(3){background:#eee9f0}
+.definition-line{padding:12px 16px;margin-bottom:16px;background:var(--panel-tint);border:1px solid var(--panel-border)}
+.enriched .two-concepts,.enriched .three-concepts,.enriched .life-grid,.care-steps{gap:0;border:1px solid var(--panel-border);background:var(--panel-surface)}
+.enriched .two-concepts>.concept,.enriched .three-concepts>.concept,.enriched .life-grid>article,.care-steps>article{min-width:0;padding:16px;border:0;background:transparent}
+.enriched .two-concepts>.concept+.concept,.enriched .three-concepts>.concept+.concept,.enriched .life-grid>article+article,.care-steps>article+article{border-left:1px solid var(--panel-border)}
+.explain-band,.slide[aria-labelledby="title3"] .explain-band{padding:16px 20px;margin-top:16px;background:var(--panel-tint);border:1px solid var(--panel-border)}
+.support-note{margin-top:16px;padding:12px 16px;background:var(--panel-note);border:1px solid var(--panel-border)}
+.enriched .support-note>.concept-link{margin-top:0}
+.support-note>.reading-note{margin-top:8px}
+.enriched .body>.concept-link{margin-top:14px;padding:10px 16px;background:var(--panel-note);border:1px solid var(--panel-border)}
+.enriched .body>table+.concept-link{margin-top:0;border-top:0}
+.compact-pair,.enriched:has(.care-steps) .compact-pair{gap:0;margin-top:16px;background:var(--panel-note);border:1px solid var(--panel-border)}
+.compact-pair p{padding:12px 16px;border:0}
+.compact-pair p+p{border-left:1px solid var(--panel-border)}
+.cycle-line{margin-top:16px;padding:12px 16px;background:var(--panel-tint);border:1px solid var(--panel-border)}
+.enriched .relation-flow{margin-top:16px}
+.enriched .relation-flow span{border:1px solid var(--panel-border)}
+.enriched .self-poles article{border:1px solid var(--panel-border)}
+.enriched .response-example{margin-top:14px;padding:12px 20px;background:var(--panel-tint);border:1px solid var(--panel-border)}
+.care-steps article>span{margin-bottom:8px}
+.care-steps p{margin-top:8px}
+.enriched .defense-table td{padding-top:10px;padding-bottom:10px}
+.enriched .theory-table td{padding-top:13px;padding-bottom:13px}
+.enriched .differential td{padding-top:8px;padding-bottom:8px}
+.enriched:has(.differential) .body{margin-top:16px}
+.enriched:has(.differential) .support-note{padding-top:10px;padding-bottom:10px;margin-top:8px}
+.two-scenes .video-context{outline:1px solid var(--panel-border);outline-offset:8px}
+.two-scenes .translation-panel{outline:1px solid var(--panel-border);outline-offset:-1px}
+.enriched.ending .closing-points{gap:0;margin-top:24px;border-top:1px solid #63716a;border-bottom:1px solid #63716a}
+.enriched.ending .closing-points p{padding:16px;border-top:0}
+.enriched.ending .closing-points p+p{border-left:1px solid #63716a}
+.enriched.ending .reflection{margin-top:20px;padding:12px 16px;background:rgba(247,245,239,.045);border:1px solid #63716a}
 </style>
 </head>
 <body>
@@ -134,21 +175,21 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <section class="slide enriched " data-title="발달과정 ② · 강화 환경: 강함과 승리는 어떻게 강화되었을까?" data-seconds="80" data-phase="Ⅰ. 사례와 생애" hidden aria-labelledby="title4"><div class="eyebrow"><span class="phase">Ⅰ. 사례와 생애</span><span>04</span></div><h2 id="title4"><span class="title-concept">발달과정 ② · 강화 환경</span><span class="title-question">강함과 승리는 어떻게 강화되었을까?</span></h2><p class="lead">어린 시절의 인정 기준은 이후 학교·직업·대중매체의 보상과 만나 유지될 수 있다.</p><div class="body">
 <div class="life-grid"><article><p class="label">13세 이후</p><h3>군사학교</h3><p>규율·위계·경쟁이 강조되는 환경을 경험했다.</p></article><article><p class="label">성인 초기</p><h3>가족·맨해튼 사업</h3><p>사업 성과와 영향력이 사회적 인정의 지표가 되었다.</p></article><article><p class="label">1973년 이후</p><h3>로이 콘과의 관계</h3><p>공격적으로 맞서는 대응을 배우고 활용했다는 보도가 있다.</p></article><article><p class="label">이후 사업·방송</p><h3>위기와 성공 이미지</h3><p>사업 위기를 거치면서도 방송에서는 성공한 사업가로 제시되었다.</p></article></div>
 <div class="explain-band"><strong>발달 가설</strong><p>강함과 승리가 인정으로 이어졌다면, 성공한 모습을 유지하고 비판에 맞서 우위를 회복하는 대응이 반복해서 강화되었을 수 있다.</p></div>
-<p class="concept-link"><strong>거짓 자기</strong> · 자신의 솔직한 감정·필요보다 타인이 기대하는 모습을 앞세우는 적응을 말한다. 기만의 뜻이 아니라, ‘보이는 나’와 ‘경험하는 나’ 사이의 간격에 관한 개념이다.</p>
-<p class="reading-note">발달은 기질·관계·사회적 환경이 함께 작용하는 과정이다. 교재의 기질적 민감성·공격성 설명도 가설이며, 특정 양육이나 사건 하나를 원인으로 확정하지 않는다.</p></div><div class="foot"><button data-open="sources">교재 PDF 235·237–238·242–244쪽 · 4주차 수업자료 16쪽 · PBS S1–S4</button><span class="page">04 / 14</span></div></section>
+<div class="support-note"><p class="concept-link"><strong>거짓 자기</strong> · 자신의 솔직한 감정·필요보다 타인이 기대하는 모습을 앞세우는 적응을 말한다. 기만의 뜻이 아니라, ‘보이는 나’와 ‘경험하는 나’ 사이의 간격에 관한 개념이다.</p>
+<p class="reading-note">발달은 기질·관계·사회적 환경이 함께 작용하는 과정이다. 교재의 기질적 민감성·공격성 설명도 가설이며, 특정 양육이나 사건 하나를 원인으로 확정하지 않는다.</p></div></div><div class="foot"><button data-open="sources">교재 PDF 235·237–238·242–244쪽 · 4주차 수업자료 16쪽 · PBS S1–S4</button><span class="page">04 / 14</span></div></section>
 <section class="slide enriched " data-title="자기 가치의 조절: 건강한 자기애와 병리적 자기애" data-seconds="75" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title5"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>05</span></div><h2 id="title5"><span class="title-concept">자기 가치의 조절</span><span class="title-question">건강한 자기애와 병리적 자기애</span></h2><p class="lead">자기 가치란 성과가 좋거나 나쁠 때도 자신을 존중할 수 있다는 기본적인 감각이다.</p><div class="body">
 <div class="definition-line"><strong>자기애성 역동</strong><span>외부의 인정으로 자기 가치를 유지하려는 노력이 삶과 관계의 중심이 되는 방식.</span></div>
 <table class="equal-table"><thead><tr><th>건강한 자기애 · 인정이 도움이 된다</th><th>병리적 자기애 · 인정에 지나치게 의존한다</th></tr></thead><tbody>
 <tr><td>성취를 기뻐하면서 한계도 받아들인다.<small>잘하지 못한 일이 있어도 나의 가치가 모두 사라지지는 않는다.</small></td><td>특별함·성과·비교에 자기 가치가 크게 좌우된다.<small>평범함이나 실패가 곧 무가치함처럼 느껴질 수 있다.</small></td></tr>
 <tr><td>비판의 내용을 살피고 도움을 구할 수 있다.</td><td>비판을 자기 전체에 대한 위협으로 느끼고, 공격·회피 등 제한된 대응을 반복한다.</td></tr>
 <tr><td>자기 존중과 타인의 필요를 함께 고려한다.</td><td>자기 가치를 회복하는 데 몰두해 관계의 상호성이 줄어든다.</td></tr></tbody></table>
-<p class="concept-link"><strong>성격 유형과 조직 수준</strong> · 유형은 반복되는 마음의 주제를, 수준은 현실을 판단하는 능력·자기와 타인의 여러 면을 통합하는 능력·관계 기능을 말한다.</p>
-<p class="reading-note">신경증적 수준 → 경계선 수준 → 정신증적 수준으로 기능의 어려움을 살핀다. ‘경계선 수준’은 경계선 성격장애라는 진단과 같지 않다.</p></div><div class="foot"><button data-open="sources">교재 PDF 233–237·254–255쪽 · 4주차 수업자료 7–8·29–30쪽</button><span class="page">05 / 14</span></div></section>
+<div class="support-note"><p class="concept-link"><strong>성격 유형과 조직 수준</strong> · 유형은 반복되는 마음의 주제를, 수준은 현실을 판단하는 능력·자기와 타인의 여러 면을 통합하는 능력·관계 기능을 말한다.</p>
+<p class="reading-note">신경증적 수준 → 경계선 수준 → 정신증적 수준으로 기능의 어려움을 살핀다. ‘경계선 수준’은 경계선 성격장애라는 진단과 같지 않다.</p></div></div><div class="foot"><button data-open="sources">교재 PDF 233–237·254–255쪽 · 4주차 수업자료 7–8·29–30쪽</button><span class="page">05 / 14</span></div></section>
 <section class="slide enriched " data-title="정동 · 수치심과 시기심: 가치 위협과 방어의 순환" data-seconds="90" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title6"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>06</span></div><h2 id="title6"><span class="title-concept">정동 · 수치심과 시기심</span><span class="title-question">가치 위협과 방어의 순환</span></h2><p class="lead">겉으로 드러나는 분노나 우월감과 함께, 그 아래에서 위협받는 자기 가치를 살핀다.</p><div class="body">
 <div class="three-concepts"><article class="concept"><p class="label">행동에 대한 평가</p><h3>죄책감</h3><p>‘내가 한 일이 잘못됐다.’<br>특정 행동을 후회하며 사과하거나 고칠 여지가 있다.</p></article><article class="concept"><p class="label">자기 전체가 드러나는 느낌</p><h3>수치심</h3><p>‘부족한 내가 드러났다.’<br>무능하고 초라하게 보인다는 느낌이 위축·숨고 싶음·분노로 이어질 수 있다.</p></article><article class="concept"><p class="label">타인의 좋은 점이 위협이 될 때</p><h3>시기심</h3><p>타인의 능력과 인정이 자신의 부족함을 부각한다. 상대의 장점을 깎아내려 비교의 고통을 줄일 수 있다.</p></article></div>
 <div class="cycle-line"><strong>가치 위협의 순환</strong><p>비판·비교 → 수치·굴욕 → 분노·평가절하 → 일시적 우위 회복 → 갈등과 새로운 위협</p></div>
-<p class="concept-link"><strong>장면 A</strong> · ‘모욕받았다’는 설명 뒤에 상대의 지위를 낮추는 말이 이어진다. 교재는 이 대응이 자기 가치를 지키는 기능을 할 가능성을 묻게 한다.</p>
-<p class="reading-note">수치심·시기심은 영상에서 직접 확인된 감정이 아닌 해석의 가설이다. 교재의 ‘질투(envy)’는 여기서 ‘시기심’으로 옮겼으며, 수치심과 죄책감은 함께 나타날 수 있다.</p></div><div class="foot"><button data-open="sources">교재 PDF 237–239쪽 · 4주차 수업자료 9–11·31·38쪽</button><span class="page">06 / 14</span></div></section>
+<div class="support-note"><p class="concept-link"><strong>장면 A</strong> · ‘모욕받았다’는 설명 뒤에 상대의 지위를 낮추는 말이 이어진다. 교재는 이 대응이 자기 가치를 지키는 기능을 할 가능성을 묻게 한다.</p>
+<p class="reading-note">수치심·시기심은 영상에서 직접 확인된 감정이 아닌 해석의 가설이다. 교재의 ‘질투(envy)’는 여기서 ‘시기심’으로 옮겼으며, 수치심과 죄책감은 함께 나타날 수 있다.</p></div></div><div class="foot"><button data-open="sources">교재 PDF 237–239쪽 · 4주차 수업자료 9–11·31·38쪽</button><span class="page">06 / 14</span></div></section>
 <section class="slide enriched " data-title="방어기제와 적응과정: 무엇을 지키고, 무엇을 잃게 하는가?" data-seconds="100" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title7"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>07</span></div><h2 id="title7"><span class="title-concept">방어기제와 적응과정</span><span class="title-question">무엇을 지키고, 무엇을 잃게 하는가?</span></h2><p class="lead">방어는 감당하기 어려운 정서를 줄이려는 심리적 대응이다. 순간의 보호가 반복되면 비용도 생긴다.</p><div class="body">
 <table class="defense-table"><thead><tr><th>방어 · 어떻게 작동하는가</th><th>단기적으로 얻는 것</th><th>반복할 때의 비용</th></tr></thead><tbody>
 <tr><td>이상화<small>자신이나 중요한 타인을 지나치게 완전하고 특별하게 높인다.</small></td><td>특별한 나, 또는 특별한 사람과 연결된 나라는 가치감을 얻는다.</td><td>현실의 한계를 만나면 실망이 커지고 평가가 급격히 뒤집힐 수 있다.</td></tr>
@@ -159,8 +200,8 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <section class="slide enriched " data-title="타인상과 관계 패턴: 상대는 나에게 어떤 존재인가?" data-seconds="85" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title8"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>08</span></div><h2 id="title8"><span class="title-concept">타인상과 관계 패턴</span><span class="title-question">상대는 나에게 어떤 존재인가?</span></h2><p class="lead">자기대상은 ‘내가 괜찮은 사람’이라는 감각을 지탱해 주는 타인의 기능을 뜻한다.</p><div class="body">
 <div class="two-concepts"><article class="concept"><p class="label">누구에게나 필요한 관계</p><h3>나를 알아봐 주는 타인</h3><p>감정과 노력을 알아주는 반응, 믿고 의지할 사람, 나와 닮았다는 느낌은 정체감과 자존감을 지탱한다. 타인을 필요로 하는 것 자체가 문제는 아니다.</p></article><article class="concept"><p class="label">인정이 관계의 중심이 될 때</p><h3>타인의 개별성이 흐려짐</h3><p>상대를 ‘나를 높여 주는가, 낮추는가’로 판단하면 그의 욕구와 한계를 놓치기 쉽다. 가치 위협이 커질수록 타인의 마음을 살필 여유도 줄어들 수 있다.</p></article></div>
 <div class="relation-flow"><span>특별한 인정 기대</span><span>다른 의견·한계</span><span>실망·가치 위협</span><span>평가절하·거리 두기</span></div>
-<p class="concept-link"><strong>의존의 역설</strong> · 인정과 도움은 절실하지만, 도움을 요청하거나 감사하면 자신의 부족함을 인정하는 것처럼 느낄 수 있다. 필요를 숨긴 채 상대가 알아주기를 기대하면 실망이 반복된다.</p>
-<p class="reading-note">장면 A는 상대를 승리·패배로 평가하는 기준을 보여 준다. 관계의 과제는 상대가 나를 만족시키지 못해도 여러 장점과 한계를 가진 사람으로 경험하는 것이다.</p></div><div class="foot"><button data-open="sources">교재 PDF 241–246쪽 · 4주차 수업자료 14–17쪽 · 영상 A</button><span class="page">08 / 14</span></div></section>
+<div class="support-note"><p class="concept-link"><strong>의존의 역설</strong> · 인정과 도움은 절실하지만, 도움을 요청하거나 감사하면 자신의 부족함을 인정하는 것처럼 느낄 수 있다. 필요를 숨긴 채 상대가 알아주기를 기대하면 실망이 반복된다.</p>
+<p class="reading-note">장면 A는 상대를 승리·패배로 평가하는 기준을 보여 준다. 관계의 과제는 상대가 나를 만족시키지 못해도 여러 장점과 한계를 가진 사람으로 경험하는 것이다.</p></div></div><div class="foot"><button data-open="sources">교재 PDF 241–246쪽 · 4주차 수업자료 14–17쪽 · 영상 A</button><span class="page">08 / 14</span></div></section>
 <section class="slide enriched " data-title="자기상: 특별한 자기와 부족한 자기 사이" data-seconds="60" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title9"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>09</span></div><h2 id="title9"><span class="title-concept">자기상</span><span class="title-question">특별한 자기와 부족한 자기 사이</span></h2><p class="lead">겉모습은 달라도, 외부 평가에 따라 자기 가치가 크게 흔들린다는 공통점이 있다.</p><div class="body">
 <div class="self-poles"><article><p class="label">과대적 표현</p><h3>특별하고 우월한 나</h3><p>과시·우월감·특별대우 요구<br><span class="minor">한계를 인정하거나 도움받는 일을 낮아지는 경험으로 느낄 수 있다.</span></p></article><span>↔</span><article><p class="label">취약한 표현</p><h3>부족하고 무가치한 나</h3><p>평가 과민·위축·공허감<br><span class="minor">인정이 없으면 자신이 어떤 사람인지, 무슨 가치가 있는지 불확실해진다.</span></p></article></div>
 <p class="center-note">고정된 두 부류라기보다, 한 사람 안에서도 상황에 따라 오갈 수 있는 양상이다.</p>
@@ -190,8 +231,8 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <tr><td>내사형 우울성<small>자기비판·무가치감</small></td><td>자기를 지탱할 감각이 비어 있거나 자신의 실체가 없는 듯한 공허함.</td><td>비판적인 내적 목소리가 강하며, 자신을 나쁜 사람으로 느끼는 죄책감과 자기비난.</td></tr>
 <tr><td>강박성<small>완벽주의·세부 집착</small></td><td>특별하고 흠없는 모습이어야 가치 있다고 느끼는 완벽함의 추구.</td><td>통제의 갈등, 분노·공격성에 대한 죄책감과 규칙을 지키려는 노력이 중심인지 살핀다.</td></tr>
 <tr><td>히스테리성<small>과시·이상화·평가절하</small></td><td>수치심과 자기 가치의 위협. 상대가 자존감을 지탱하는 기능을 하는 자기대상 전이.</td><td>성·관계 갈등에서의 불안. 과거 중요한 사람과의 관계가 반복되는 대상전이에 주목한다.</td></tr></tbody></table>
-<p class="concept-link"><strong>지속성과 맥락</strong> · 큰 상처 뒤에는 누구나 일시적으로 자기애적인 반응을 보일 수 있다. 생애와 여러 관계에서 오래 반복되는지 확인하며, 위 대비를 단일한 판별 기준으로 쓰지 않는다.</p>
-<p class="reading-note">조증 삽화의 과대감은 수면·에너지·기분의 변화와 삽화적 경과를 함께 살핀다. 성격의 지속적 패턴과 구분하는 것이 중요하다.</p></div><div class="foot"><button data-open="sources">교재 PDF 254–257쪽(인쇄 262–265쪽) · 4주차 수업자료 39쪽</button><span class="page">13 / 14</span></div></section>
+<div class="support-note"><p class="concept-link"><strong>지속성과 맥락</strong> · 큰 상처 뒤에는 누구나 일시적으로 자기애적인 반응을 보일 수 있다. 생애와 여러 관계에서 오래 반복되는지 확인하며, 위 대비를 단일한 판별 기준으로 쓰지 않는다.</p>
+<p class="reading-note">조증 삽화의 과대감은 수면·에너지·기분의 변화와 삽화적 경과를 함께 살핀다. 성격의 지속적 패턴과 구분하는 것이 중요하다.</p></div></div><div class="foot"><button data-open="sources">교재 PDF 254–257쪽(인쇄 262–265쪽) · 4주차 수업자료 39쪽</button><span class="page">13 / 14</span></div></section>
 <section class="slide enriched cover ending" data-title="정리와 회고" data-seconds="30" data-phase="Ⅳ. 비교와 정리" hidden aria-labelledby="title14"><div class="eyebrow"><span class="phase">Ⅳ. 비교와 정리</span><span>14</span></div><h2 id="title14"><span class="title-concept">정리와 회고</span></h2><div class="body"><p class="end-quote">특별함을 증명하는 것에서,<br><em>부족함이 있어도 관계를 유지하는 것으로.</em></p>
 <div class="closing-points"><p>발달과 인정<br><strong>어떤 모습으로 인정받았는가?</strong><br><span>승리와 성과의 기준이 자기 가치와 연결되었을 가능성을 살핀다.</span></p><p>정서와 방어<br><strong>무엇을 지키려 하는가?</strong><br><span>평가절하와 과대한 표현이 가치 위협을 줄이는 기능을 검토한다.</span></p><p>관계와 치료<br><strong>어떤 경험이 필요한가?</strong><br><span>실망·도움·실수를 견디며 자신과 타인의 여러 면을 함께 받아들인다.</span></p></div>
 <p class="reflection"><strong>회고</strong> · 공격이나 과시라는 이름만으로는 행동을 충분히 이해하기 어렵다. 그 행동이 지키려는 자기 가치와 관계에 남기는 비용을 함께 보는 관점이 필요하다.</p>

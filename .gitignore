@@ -3,3 +3,6 @@
 !.gitignore
 !.nojekyll
 !index.html
+!fonts/
+!fonts/FreesentationVF.ttf
+!fonts/OFL-license.txt

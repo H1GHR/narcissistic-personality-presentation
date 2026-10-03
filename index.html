@@ -161,7 +161,7 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .reference-columns{display:grid;grid-template-columns:1fr 1fr;gap:48px}
 .reference-column+ .reference-column{border-left:1px solid var(--line);padding-left:40px}
 .reference-group h3{font-size:25px;line-height:1.3;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:17px}
-.reference-group+.reference-group{margin-top:30px}
+.reference-group+.reference-group{margin-top:24px}
 .reference-list{list-style:none;padding:0;margin:0;display:grid;gap:18px}
 .reference-list li{font-size:23px;line-height:1.3;overflow-wrap:break-word;word-break:normal}
 .reference-list strong{font-weight:650}
@@ -172,6 +172,46 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 .family-example h3{color:var(--obs)}
 .family-example p small{display:block;margin-top:12px;font-size:19px;line-height:1.45;color:var(--muted)}
 .slide[aria-labelledby="title3"] .two-concepts{grid-template-columns:1fr 1.16fr}
+/* 정동의 중심·비교 개념과 강점·치료 원칙의 위계 */
+.slide[aria-labelledby="title4"] .life-grid h3{font-size:25px;line-height:1.35}
+.slide[aria-labelledby="title4"] .life-grid article>p:last-child{font-size:22px;line-height:1.45;margin-top:12px}
+.emotions-slide .emotion-concepts .concept{padding:14px 18px}
+.emotions-slide .emotion-concepts h3{font-size:26px}
+.emotions-slide .emotion-concepts .concept>p:last-child{font-size:22px;line-height:1.45;margin-top:10px}
+.guilt-comparison{font-size:20px;line-height:1.45;padding:10px 18px;border:1px solid var(--panel-border);border-top:0;color:var(--muted)}
+.guilt-comparison strong{color:var(--ink)}
+.affect-profiles{display:grid;grid-template-columns:1fr 1fr;margin-top:16px;border:1px solid var(--panel-border);background:var(--panel-note)}
+.affect-profiles p{padding:12px 18px;font-size:22px;line-height:1.4}
+.affect-profiles p+p{border-left:1px solid var(--panel-border)}
+.affect-profiles strong{display:block;font-size:21px;color:var(--obs);margin-bottom:4px}
+.affect-shared{font-size:19px;line-height:1.4;margin-top:8px;color:var(--muted)}
+.emotions-slide .cycle-line{display:grid;grid-template-columns:160px 1fr;align-items:center;gap:16px;font-size:22px;margin-top:14px;padding:10px 18px}
+.emotions-slide .cycle-line strong{margin-bottom:0}
+.emotion-case{font-size:21px;line-height:1.4;margin-top:12px}
+.emotion-case strong{color:var(--obs)}
+.emotions-slide .reading-note{margin-top:7px;font-size:17px}
+.slide[aria-labelledby="title7"] .defense-table td{padding-top:4px;padding-bottom:4px}
+.slide[aria-labelledby="title7"] .defense-table td small{margin-top:3px}
+.slide[aria-labelledby="title7"] .body>.concept-link{padding-top:6px;padding-bottom:6px}
+.defense-extension{font-size:20px;line-height:1.4;margin-top:8px}
+.defense-extension strong{color:var(--obs)}
+.strengths-panel{display:grid;grid-template-columns:196px 1fr;align-items:center;gap:10px 18px;margin-top:10px;padding:12px 16px;border:1px solid var(--panel-border);background:var(--panel-tint)}
+.strengths-panel h3{font-size:24px;line-height:1.3;color:var(--obs)}
+.strengths-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.strengths-grid p{font-size:20px;line-height:1.35;padding:0 14px}
+.strengths-grid p:first-child{padding-left:0}
+.strengths-grid p+p{border-left:1px solid var(--panel-border)}
+.strengths-grid strong,.strengths-grid span{display:block}
+.strengths-grid span{font-size:18px;color:var(--muted);margin-top:4px}
+.strengths-goal{grid-column:1/-1;font-size:19px;line-height:1.4;padding-top:8px;border-top:1px solid var(--panel-border)}
+.empathy-panel{display:grid;grid-template-columns:260px 1fr;gap:22px;margin-top:14px;padding:14px 20px;border:1px solid var(--obs);background:var(--panel-note)}
+.empathy-panel h3{font-size:28px;line-height:1.4;color:var(--obs)}
+.empathy-panel p{font-size:21px;line-height:1.4}
+.empathy-panel p+p{margin-top:6px}
+.slide[aria-labelledby="title12"] .response-example{font-size:23px;line-height:1.45;padding:10px 20px}
+.slide[aria-labelledby="title12"] .response-example span{font-size:16px;margin-bottom:6px}
+.care-recovery{font-size:20px;line-height:1.4;margin-top:10px;color:var(--muted)}
+.care-recovery strong{color:var(--obs)}
 </style>
 </head>
 <body>
@@ -188,10 +228,10 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <div class="explain-band"><strong>조건부 인정</strong><p>존재 자체보다 성과나 특정 역할을 해낼 때 인정받는 경험이다. 이런 경험이 반복되면 실패를 한 번의 결과가 아니라 ‘사랑받을 자격의 상실’처럼 느낄 수 있다.</p></div>
 <p class="concept-link"><strong>인정의 조건</strong> · 실패하거나 약한 모습을 보일 때도 관심과 이해를 받을 수 있었을까? 교재는 비난뿐 아니라 실제 모습과 동떨어진 과찬도 지속적인 평가가 될 수 있다고 설명한다.</p></div><div class="foot"><button data-open="sources">교재 250–252쪽 · 4주차 수업자료 16쪽 · PBS S1·S2 · 생애 S5·S6</button><span class="page">03 / 15</span></div></section>
 <section class="slide enriched " data-title="발달과정 ② · 강화 환경: 강함과 승리는 어떻게 강화되었을까?" data-seconds="80" data-phase="Ⅰ. 사례와 생애" hidden aria-labelledby="title4"><div class="eyebrow"><span class="phase">Ⅰ. 사례와 생애</span><span>04</span></div><h2 id="title4"><span class="title-concept">발달과정 ② · 강화 환경</span><span class="title-question">강함과 승리는 어떻게 강화되었을까?</span></h2><p class="lead">어린 시절에 인정받았던 모습이 학교·직업·대중매체에서도 보상을 받으면, 그 모습이 계속 유지될 수 있다.</p><div class="body">
-<div class="life-grid"><article><p class="label">13세 이후</p><h3>군사학교</h3><p>규율·위계·경쟁이 강조되는 환경을 경험했다.</p></article><article><p class="label">성인 초기</p><h3>가족·맨해튼 사업</h3><p>사업 성과와 영향력이 사회적 인정의 지표가 되었다.</p></article><article><p class="label">1973년 이후</p><h3>로이 콘과의 관계</h3><p>공격적으로 맞서는 대응을 배우고 활용했다는 보도가 있다.</p></article><article><p class="label">이후 사업·방송</p><h3>위기와 성공 이미지</h3><p>사업 위기를 거치면서도 방송에서는 성공한 사업가로 제시되었다.</p></article></div>
+<div class="life-grid"><article><p class="label">13세 이후</p><h3>뉴욕 군사학교</h3><p>군대식 규율과 위계를 따르는 학교에서 경쟁과 승리를 중시하는 환경을 경험했다.</p></article><article><p class="label">성인 초기</p><h3>가족 사업에서 맨해튼으로</h3><p>아버지의 주택 임대업을 이어 뉴욕 맨해튼의 호텔·고층건물 개발로 확장했다. 사업 성과가 인정의 지표가 되었다.</p></article><article><p class="label">1973년 이후</p><h3>변호사 로이 콘</h3><p>주택 임대 인종차별 소송에서 트럼프 측 변호를 맡았다. 혐의를 부인하고 정부에 맞소송하며 반격하는 전략을 조언했다.</p></article><article><p class="label">이후 사업·방송</p><h3>성공한 사업가의 이미지</h3><p>사업 위기를 겪은 뒤에도, 사업 경쟁 리얼리티 방송 《어프렌티스》에서 성공한 경영자의 이미지로 등장했다.</p></article></div>
 <div class="explain-band"><strong>발달 가설</strong><p>강함과 승리로 인정받았다면, 성공한 모습을 유지하고 비판에 맞서 우위를 회복하는 대응이 반복해서 강화되었을 수 있다.</p></div>
 <div class="support-note"><p class="concept-link"><strong>거짓 자기</strong> · 자신의 솔직한 감정·필요보다 타인이 기대하는 모습을 앞세우는 적응을 말한다. 여기서 거짓은 기만을 뜻하지 않는다. ‘보이는 나’와 ‘경험하는 나’ 사이의 간격에 관한 개념이다.</p>
-<p class="reading-note">발달은 기질·관계·사회적 환경이 함께 작용하는 과정이다. 교재의 기질적 민감성·공격성 설명도 가설이며, 특정 양육이나 사건 하나를 원인으로 확정하지 않는다.</p></div></div><div class="foot"><button data-open="sources">교재 243·245–246·250쪽 · 4주차 수업자료 16쪽 · PBS S1–S4</button><span class="page">04 / 15</span></div></section>
+<p class="reading-note">성격 발달에는 기질과 관계, 사회적 환경이 함께 작용한다.</p></div></div><div class="foot"><button data-open="sources">교재 243·245–246·250쪽 · 4주차 수업자료 16쪽 · PBS S1–S4</button><span class="page">04 / 15</span></div></section>
 <section class="slide enriched " data-title="자기 가치의 조절: 건강한 자기애와 병리적 자기애" data-seconds="75" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title5"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>05</span></div><h2 id="title5"><span class="title-concept">자기 가치의 조절</span><span class="title-question">건강한 자기애와 병리적 자기애</span></h2><p class="lead">자기 가치란 성과가 좋거나 나쁠 때도 자신을 존중할 수 있다는 기본적인 감각이다.</p><div class="body">
 <div class="definition-line"><strong>자기애성 역동</strong><span>외부의 인정으로 자기 가치를 유지하려는 노력이 삶과 관계의 중심이 되는 방식.</span></div>
 <table class="equal-table"><thead><tr><th>건강한 자기애 · 인정이 도움이 된다</th><th>병리적 자기애 · 인정에 지나치게 의존한다</th></tr></thead><tbody>
@@ -200,19 +240,22 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <tr><td>자기 존중과 타인의 필요를 함께 고려한다.</td><td>자기 가치를 회복하는 데 몰두해 상대의 필요를 살피기 어려워지고, 관계의 상호성이 줄어든다.</td></tr></tbody></table>
 <div class="support-note"><p class="concept-link"><strong>성격 유형과 조직 수준</strong> · 유형은 반복되는 마음의 주제를 말한다. 수준은 현실을 얼마나 잘 판단하는지, 자기와 타인의 여러 면을 통합할 수 있는지, 관계 기능은 어떠한지를 뜻한다.</p>
 <p class="reading-note">신경증적 수준 → 경계선 수준 → 정신증적 수준으로 기능의 어려움을 살핀다. ‘경계선 수준’은 경계선 성격장애라는 진단과 같지 않다.</p></div></div><div class="foot"><button data-open="sources">교재 75·85·241·249–250쪽 · 4주차 수업자료 7–8·29–30쪽</button><span class="page">05 / 15</span></div></section>
-<section class="slide enriched " data-title="정동 · 수치심과 시기심: 가치 위협과 방어의 순환" data-seconds="90" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title6"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>06</span></div><h2 id="title6"><span class="title-concept">정동 · 수치심과 시기심</span><span class="title-question">가치 위협과 방어의 순환</span></h2><p class="lead">겉으로 드러나는 분노나 우월감과 함께, 자기 가치가 위협받고 있지는 않은지 살핀다.</p><div class="body">
-<div class="three-concepts"><article class="concept"><p class="label">행동에 대한 평가</p><h3>죄책감</h3><p>‘내가 한 일이 잘못됐다.’<br>특정 행동을 후회하며 사과하거나 고칠 여지가 있다.</p></article><article class="concept"><p class="label">자기 전체가 드러나는 느낌</p><h3>수치심</h3><p>‘부족한 내가 드러났다.’<br>무능하고 초라하게 보인다는 느낌이 위축·숨고 싶음·분노로 이어질 수 있다.</p></article><article class="concept"><p class="label">타인의 좋은 점이 위협이 될 때</p><h3>시기심</h3><p>타인의 능력이나 인정받는 모습에 자신의 부족함이 더 크게 느껴진다. 상대의 장점을 깎아내리면 비교에서 오는 고통이 줄어들 수 있다.</p></article></div>
-<div class="cycle-line"><strong>가치 위협의 순환</strong><p>비판·비교 → 수치·굴욕 → 분노·평가절하 → 일시적 우위 회복 → 갈등과 새로운 위협</p></div>
-<div class="support-note"><p class="concept-link"><strong>장면 A</strong> · ‘모욕받았다’는 설명 뒤에 상대의 지위를 낮추는 말이 이어진다. 교재의 관점에서, 이런 대응이 자기 가치를 지키는 기능을 할 가능성을 살펴본다.</p>
-<p class="reading-note">수치심·시기심은 영상에서 직접 확인된 감정이 아닌 해석의 가설이다. 교재의 ‘질투(envy)’는 여기서 ‘시기심’으로 옮겼으며 수치심과 죄책감은 함께 나타날 수 있다.</p></div></div><div class="foot"><button data-open="sources">교재 246–247쪽 · 4주차 수업자료 9–11·31·38쪽</button><span class="page">06 / 15</span></div></section>
+<section class="slide enriched emotions-slide" data-title="정동 · 수치심과 시기심: 가치 위협과 방어의 순환" data-seconds="90" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title6"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>06</span></div><h2 id="title6"><span class="title-concept">정동 · 수치심과 시기심</span><span class="title-question">가치 위협과 방어의 순환</span></h2><p class="lead">자기애성 역동에서는 부족함이 드러나는 수치심과, 타인의 장점 앞에서 느끼는 시기심이 중요하다.</p><div class="body">
+<div class="two-concepts emotion-concepts"><article class="concept"><h3>수치심 · “부족한 내가 드러났다”</h3><p>행동 하나의 잘못을 넘어, 자기 전체가 무능하고 초라하게 보인다는 느낌이다. 숨고 싶거나 분노할 수 있다.</p></article><article class="concept"><h3>시기심 · “상대의 장점이 나를 초라하게 한다”</h3><p>타인의 능력·인정이 자신의 부족함을 더 크게 느끼게 한다. 상대의 장점을 깎아내리며 비교의 고통을 줄이려 한다.</p></article></div>
+<p class="guilt-comparison"><strong>죄책감과의 차이</strong> · 죄책감은 “내가 한 일이 잘못됐다”는 행동에 대한 느낌이다. 수치심과 함께 나타날 수도 있다.</p>
+<div class="affect-profiles"><p><strong>과대형에서 두드러지는 표현</strong><span>자신감·우월감, 비판받을 때의 분노</span></p><p><strong>취약형에서 두드러지는 표현</strong><span>상처받음·과민함·위축, 오해받는다는 느낌</span></p></div>
+<p class="affect-shared">두 양상 모두 자기 가치의 불안정성과 연결되며, 한 사람도 상황에 따라 두 상태를 오갈 수 있다.</p>
+<div class="cycle-line"><strong>가치 위협의 순환</strong><p>비판·비교 → 수치·굴욕 → 분노·평가절하 → 일시적 우위 회복 → 새로운 갈등</p></div>
+<p class="emotion-case"><strong>장면 A</strong> · “모욕받았다”는 말 뒤에 상대의 지위를 낮춘다. 평가절하가 자기 가치를 지키는 기능과 연결된다.</p>
+<p class="reading-note">교재의 ‘질투(envy)’는 여기서 ‘시기심’으로 표현했다.</p></div><div class="foot"><button data-open="sources">교재 244–247쪽 · 4주차 수업자료 9–11·13·31·38쪽 · 영상 A</button><span class="page">06 / 15</span></div></section>
 <section class="slide enriched " data-title="방어기제와 적응과정: 무엇을 지키고, 무엇을 잃게 하는가?" data-seconds="100" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title7"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>07</span></div><h2 id="title7"><span class="title-concept">방어기제와 적응과정</span><span class="title-question">무엇을 지키고, 무엇을 잃게 하는가?</span></h2><p class="lead">방어는 감당하기 어려운 정서를 줄이려는 심리적 대응이다. 당장은 자신을 보호해도 반복되면 자신과 관계에 어려움이 생긴다.</p><div class="body">
 <table class="defense-table"><thead><tr><th>방어 · 어떻게 작동하는가</th><th>단기적으로 얻는 것</th><th>반복할 때 생기는 어려움</th></tr></thead><tbody>
-<tr><td>이상화<small>자신이나 중요한 타인을 지나치게 완전하고 특별하게 높인다.</small></td><td><strong class="comparison-key">특별한 나</strong>, 또는 특별한 사람과 연결된 나라는 가치감을 얻는다.</td><td>현실의 한계를 만나면 실망이 커지고 <strong class="comparison-key">평가가 급격히 뒤집힐</strong> 수 있다.</td></tr>
+<tr><td>이상화<small>자신·중요한 타인을 완전하고 특별하게 높인다.</small></td><td><strong class="comparison-key">특별한 나</strong>, 또는 특별한 사람과 연결된 나라는 가치감을 얻는다.</td><td>현실의 한계를 만나면 실망이 커지고 <strong class="comparison-key">평가가 급격히 뒤집힐</strong> 수 있다.</td></tr>
 <tr><td>평가절하<small>상대의 가치나 장점을 낮추어 본다.</small></td><td>상대를 하찮게 느끼면 그의 <strong class="comparison-key">비판이나 거절</strong>도 덜 위협적이다.</td><td>유용한 <strong class="comparison-key">피드백을 놓치고</strong> 갈등을 풀 기회와 <strong class="comparison-key">신뢰가 줄어든다</strong>.</td></tr>
 <tr><td>완벽주의<small>결함이 없어야 가치 있다고 여긴다.</small></td><td>성과를 높여 <strong class="comparison-key">부족함이 드러나는 상황</strong>을 피하려 한다.</td><td>성취해도 <strong class="comparison-key">만족이 짧고</strong> 기준이 올라가며 작은 실패에도 <strong class="comparison-key">자기를 비난한다</strong>.</td></tr></tbody></table>
-<p class="concept-link"><strong>장면 A</strong> · 매케인의 패배·포로 경험을 낮춰 말하는 행동을 평가절하의 기능과 연결한다. 과거에 지지했다는 사실만으로 이상화까지 확인되지는 않는다.</p>
-<div class="compact-pair"><p><strong>통제와 철수</strong> · 통제로 상대의 독립성을 제한하거나 철수로 더 큰 수치심을 피하는 대응도 가능하다.</p><p><strong>성취동기와 관계</strong> · 성취동기·추진력은 강점이 될 수 있다. 치료는 야망을 없애기보다 피드백과 관계를 감당할 선택지를 넓힌다.</p></div></div><div class="foot"><button data-open="sources">교재 245·247–249·253–254쪽 · 4주차 수업자료 11–12·18·34쪽 · 영상 A</button><span class="page">07 / 15</span></div></section>
-<section class="slide enriched " data-title="타인상과 관계 패턴: 상대는 나에게 어떤 존재인가?" data-seconds="85" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title8"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>08</span></div><h2 id="title8"><span class="title-concept">타인상과 관계 패턴</span><span class="title-question">상대는 나에게 어떤 존재인가?</span></h2><p class="lead">자기대상은 타인이 ‘내가 괜찮은 사람’이라는 감각을 지탱해 주는 기능을 뜻한다.</p><div class="body">
+<p class="concept-link"><strong>장면 A</strong> · 매케인의 패배·포로 경험을 낮춰 말한다. 상대를 하찮게 만들면, 그가 한 비판의 무게도 줄어든다.</p>
+<p class="defense-extension"><strong>통제와 철수</strong> · 상대를 내 뜻대로 움직이려 하거나, 평가받는 상황에서 물러나 수치심을 피하기도 한다.</p><div class="strengths-panel"><h3>자기애성 성격의 강점</h3><div class="strengths-grid"><p><strong>높은 성취동기</strong><span>야망·추진력·능력 개발</span></p><p><strong>리더십</strong><span>자기표현·영향력·설득력</span></p><p><strong>전략적 민감성</strong><span>타인의 기대·평가 파악</span></p><p><strong>창의적 비전</strong><span>목표의 구체화와 관리</span></p></div><p class="strengths-goal">이 힘을 살리면서, 피드백을 받아들이고 서로의 필요를 존중하는 관계 능력을 기른다.</p></div></div><div class="foot"><button data-open="sources">교재 245·247–249·253–254쪽 · 4주차 수업자료 11–12·18·34쪽 · 영상 A</button><span class="page">07 / 15</span></div></section>
+<section class="slide enriched " data-title="타인상과 관계 패턴: 상대는 나에게 어떤 존재인가?" data-seconds="85" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title8"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>08</span></div><h2 id="title8"><span class="title-concept">타인상과 관계 패턴</span><span class="title-question">상대는 나에게 어떤 존재인가?</span></h2><p class="lead">자기대상은 타인과의 관계를 통해 자기감과 자존감을 유지하는 경험을 뜻한다.</p><div class="body">
 <div class="two-concepts"><article class="concept"><p class="label">누구에게나 필요한 관계</p><h3>나를 알아봐 주는 타인</h3><p>감정과 노력을 알아주는 반응, 믿고 의지할 사람, 나와 닮았다는 느낌은 정체감과 자존감을 지탱한다. 타인을 필요로 하는 것 자체가 문제는 아니다.</p></article><article class="concept"><p class="label">인정이 관계의 중심이 될 때</p><h3>타인의 개별성이 흐려짐</h3><p>상대를 ‘나를 높여 주는가, 낮추는가’로 판단하면 그의 욕구와 한계를 놓치기 쉽다. 가치 위협이 커질수록 타인의 마음을 살필 여유도 줄어들 수 있다.</p></article></div>
 <div class="relation-flow"><span>특별한 인정 기대</span><span>다른 의견·한계</span><span>실망·가치 위협</span><span>평가절하·거리 두기</span></div>
 <div class="support-note"><p class="concept-link"><strong>의존의 역설</strong> · 인정과 도움은 절실하지만, 도움을 요청하거나 감사하면 자신의 부족함을 인정하는 것처럼 느낄 수 있다. 필요를 숨긴 채 상대가 알아주기를 기대하면 실망이 반복된다.</p>
@@ -220,26 +263,26 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <section class="slide enriched " data-title="자기상: 특별한 자기와 부족한 자기 사이" data-seconds="60" data-phase="Ⅱ. 교재로 이해하기" hidden aria-labelledby="title9"><div class="eyebrow"><span class="phase">Ⅱ. 교재로 이해하기</span><span>09</span></div><h2 id="title9"><span class="title-concept">자기상</span><span class="title-question">특별한 자기와 부족한 자기 사이</span></h2><p class="lead">겉모습은 달라도, 외부 평가에 따라 자기 가치가 크게 흔들린다는 공통점이 있다.</p><div class="body">
 <div class="self-poles"><article><p class="label">과대적 표현</p><h3>특별하고 우월한 나</h3><p>과시·우월감·특별대우 요구<br><span class="minor">한계를 인정하거나 도움을 받으면 자신의 가치가 낮아진다고 느낄 수 있다.</span></p></article><span>↔</span><article><p class="label">취약한 표현</p><h3>부족하고 무가치한 나</h3><p>평가 과민·위축·공허감<br><span class="minor">인정이 없으면 자신이 어떤 사람인지, 무슨 가치가 있는지 불확실해진다.</span></p></article></div>
 <p class="center-note">고정된 두 부류라기보다, 한 사람 안에서도 상황에 따라 오갈 수 있는 양상이다.</p>
-<div class="explain-band"><strong>장면 B</strong><p>중국 무역 문제를 말하며 자신을 ‘선택받은 사람’으로 제시한다. 특별한 역할로 자신의 가치를 높이는 표현을 관찰할 수 있지만 취약한 내면까지 확인한 것은 아니다.</p></div>
+<div class="explain-band"><strong>장면 B</strong><p>중국 무역 문제를 말하며 자신을 ‘선택받은 사람’으로 제시한다. 자신을 특별한 해결자로 내세우는 모습에서 거대자기의 표현을 이해할 수 있다.</p></div>
 <p class="concept-link"><strong>자기 통합</strong> · 성공한 나와 실수한 나를 같은 사람으로 받아들이는 것. 늘 최고가 되려 하기보다 자신의 장점과 한계를 함께 받아들이며 자기 존중을 유지하는 것이 목표다.</p></div><div class="foot"><button data-open="sources">교재 244–245·253–254쪽 · 4주차 수업자료 7–8·13–14쪽 · 영상 B</button><span class="page">09 / 15</span></div></section>
 <section class="slide enriched " data-title="전이와 역전이: 상담에서 반복되는 인정과 평가" data-seconds="95" data-phase="Ⅲ. 상담과 변화" hidden aria-labelledby="title10"><div class="eyebrow"><span class="phase">Ⅲ. 상담과 변화</span><span>10</span></div><h2 id="title10"><span class="title-concept">전이와 역전이</span><span class="title-question">상담에서 반복되는 인정과 평가</span></h2><p class="lead">전이는 익숙한 관계의 기대가 상담에서 반복되는 현상, 역전이는 그 관계에서 상담자가 경험하는 반응이다.</p><div class="body">
 <table class="equal-table"><thead><tr><th>전이 · 내담자가 상담자를 경험하는 방식</th><th>역전이 · 상담자가 경험할 수 있는 반응</th></tr></thead><tbody>
-<tr><td>자신의 가치를 알아주는 특별한 전문가로 기대한다.</td><td>감탄하거나 자신도 특별한 상담자처럼 느낀다.</td></tr>
+<tr><td>자신의 가치를 알아주는 특별한 전문가로 기대한다.</td><td>내담자의 성취·자신감에 감탄한다. 특별한 전문가로 대우받으며 자신도 특별한 상담자처럼 느낄 수 있다.</td></tr>
 <tr><td>다른 의견이나 한계 설정을 무시·도전으로 경험한다.</td><td>유능함을 증명해야 한다는 압박, 논쟁하고 싶은 마음이 생긴다.</td></tr>
-<tr><td>기대에 못 미치면 상담자가 전혀 쓸모없다고 느낀다.</td><td>무력감·분노·지루함, 한 사람으로 보이지 않는 듯한 느낌이 든다.</td></tr></tbody></table>
+<tr><td>기대에 못 미치면 상담자가 전혀 쓸모없다고 느낀다.</td><td>무력감·분노·지루함이 생긴다. 자신의 생각과 감정보다 인정을 제공하는 역할만 요구받으면, 한 사람으로 존중받지 못하는 듯 느낀다.</td></tr></tbody></table>
 <div class="explain-band"><strong>자기대상 전이</strong><p>상담자를 독립된 사람보다 자기 가치를 유지해 주는 기능으로 경험한다. 나를 알아봐 주기(비춰 주기), 나와 비슷하다고 느끼기(쌍둥이 관계) 같은 기대가 중요해진다.</p></div>
-<p class="concept-link"><strong>상담자의 대응</strong> · 증명 경쟁이나 보복에 들어가기 전에, 실제로 놓친 부분과 내담자의 실망을 함께 살핀다. 상담자의 감정은 관계 이해의 단서이며 내담자의 성격을 확정하는 증거는 아니다.</p></div><div class="foot"><button data-open="sources">교재 254–257·261쪽 · 4주차 수업자료 23–26·34쪽</button><span class="page">10 / 15</span></div></section>
+<p class="concept-link"><strong>상담자의 대응</strong> · 증명 경쟁이나 보복에 들어가기 전에, 실제로 놓친 부분과 내담자의 실망을 함께 살핀다. 이때의 감정을 단서로 관계에서 무엇이 반복되는지 살핀다.</p></div><div class="foot"><button data-open="sources">교재 254–257·261쪽 · 4주차 수업자료 23–26·34쪽</button><span class="page">10 / 15</span></div></section>
 <section class="slide enriched " data-title="형성 이론과 치료 관점: 코헛과 컨버그" data-seconds="110" data-phase="Ⅲ. 상담과 변화" hidden aria-labelledby="title11"><div class="eyebrow"><span class="phase">Ⅲ. 상담과 변화</span><span>11</span></div><h2 id="title11"><span class="title-concept">형성 이론과 치료 관점</span><span class="title-question">코헛과 컨버그</span></h2><p class="lead">같은 행동을 보더라도 ‘성장에 무엇이 부족했는가’와 ‘어떤 방어 구조가 유지되는가’에 초점을 달리 둔다.</p><div class="body">
 <table class="theory-table"><thead><tr><th>구분</th><th>코헛 · 자기심리학</th><th>컨버그 · 대상관계 관점</th></tr></thead><tbody>
-<tr><td>형성의 이해</td><td>필요한 <strong class="comparison-key">자기대상 경험</strong>에 어려움이 생겨 안정된 자기감의 성장이 멈추거나 취약해졌다고 본다.</td><td><strong class="comparison-key">거대자기와 원시적 방어</strong>가 유지되는 구조에 주목한다. 좋은 면과 나쁜 면을 <strong class="comparison-key">함께 통합하기 어렵다</strong>고 본다.</td></tr>
+<tr><td>형성의 이해</td><td>필요한 <strong class="comparison-key">자기대상 경험</strong>에 어려움이 생겨 안정된 자기감의 성장이 멈추거나 취약해졌다고 본다.</td><td><strong class="comparison-key">거대자기와 원시적 방어</strong>에 주목한다. 분열처럼 자신·타인을 완전히 좋거나 나쁜 쪽으로 나누어 경험하므로, 여러 면을 <strong class="comparison-key">함께 통합하기 어렵다</strong>고 본다.</td></tr>
 <tr><td>치료의 초점</td><td>상처받은 <strong class="comparison-key">주관적 경험에 공감</strong>하고 자기감의 성장을 돕는다. 실제 공감 실패를 인정하며 <strong class="comparison-key">관계를 회복</strong>한다.</td><td>거대성·이상화·평가절하의 <strong class="comparison-key">모순을 직면</strong>하고 시기심·욕심에 대한 <strong class="comparison-key">방어의 기능을 해석</strong>한다.</td></tr>
 <tr><td>사례 해석</td><td>성취와 관계없이 <strong class="comparison-key">감정과 필요를 이해받을</strong> 경험은 충분했을까?</td><td><strong class="comparison-key">우월한 자기와 낮게 평가되는 타인</strong>이라는 구도는 어떤 기능을 할까?</td></tr>
 <tr><td>개입의 의미</td><td><strong class="comparison-key">공감</strong>은 경험의 의미를 이해하는 일이다. 과장된 자기평가나 특별대우에 동의하는 것과 다르다.</td><td><strong class="comparison-key">직면</strong>은 현재 관계의 모순을 함께 살피는 일이다. 비난하거나 과대성을 꺾는 것과 다르다.</td></tr></tbody></table>
-<p class="concept-link"><strong>공통 기반</strong> · 인내, 존중, 불완전함의 수용. 두 관점은 치료의 앞뒤 단계가 아니며 내담자의 기능 수준과 관계의 안정성에 맞게 이해와 개입을 선택한다.</p></div><div class="foot"><button data-open="sources">교재 253–254·257–261쪽 · 4주차 수업자료 26·32–34쪽</button><span class="page">11 / 15</span></div></section>
+<p class="concept-link"><strong>공통 기반</strong> · 인내, 존중, 불완전함의 수용. 두 관점은 치료의 앞뒤 단계가 아니며 내담자의 기능 수준과 관계의 안정성에 맞게 이해와 개입을 선택한다.</p></div><div class="foot"><button data-open="sources">교재 147–149·253–254·257–261쪽 · 4주차 수업자료 26·32–34쪽</button><span class="page">11 / 15</span></div></section>
 <section class="slide enriched " data-title="치료적 함의: 불완전해도 유지되는 자기 가치" data-seconds="105" data-phase="Ⅲ. 상담과 변화" hidden aria-labelledby="title12"><div class="eyebrow"><span class="phase">Ⅲ. 상담과 변화</span><span>12</span></div><h2 id="title12"><span class="title-concept">치료적 함의</span><span class="title-question">불완전해도 유지되는 자기 가치</span></h2><p class="lead">치료목표는 부족함을 견디면서 자기 가치와 상호적인 관계를 유지하는 것이다. 야망 자체를 없애려는 것은 아니다.</p><div class="body">
 <div class="care-steps"><article><span>01</span><h3>도움의 목표 합의</h3><p>반복되는 갈등·실패 뒤의 고통 등 내담자가 겪는 어려움에서 출발한다.</p></article><article><span>02</span><h3>실제 불만 확인</h3><p>상담자가 놓친 점을 구체적으로 듣는다. 실수가 있다면 인정하고 수정한다.</p></article><article><span>03</span><h3>관계 변화 탐색</h3><p>상담관계가 감당할 수 있을 때, 상담자에 대한 평가가 바뀐 순간의 실망·수치심과 그때 필요했던 것을 함께 살핀다.</p></article><article><span>04</span><h3>표현과 회복 연습</h3><p>상대가 알아주길 기다리기보다 요청하기·감사하기·사과하기를 연습한다.</p></article></div>
 <blockquote class="response-example"><span>상담 반응 예시</span>“어떤 대목에서 이해받지 못했다고 느끼셨는지 듣고 싶습니다.<br>그때 제게 바라셨던 반응도 함께 말씀해 주실 수 있을까요?”</blockquote>
-<div class="compact-pair"><p><strong>새로운 관계 경험</strong> · 상담자도 실수를 인정하면서 자기 존중을 유지한다. 불완전해도 서로를 전부 무가치하게 만들지 않고 관계를 회복할 수 있음을 경험한다.</p><p><strong>공감과 경계</strong> · 상처의 의미는 이해하되 모욕이나 특별대우 요구에 동조하지 않는다. 행동의 책임은 굴욕을 주기보다 구체적으로 다룬다.</p></div></div><div class="foot"><button data-open="sources">교재 253–254·257–261쪽 · 4주차 수업자료 18·25–26·32–34쪽</button><span class="page">12 / 15</span></div></section>
+<div class="empathy-panel"><h3>공감은 동조가 아니다</h3><div><p><strong>상처와 실망을 이해한다.</strong> 실제 불만과 그때 필요했던 반응을 듣는다.</p><p><strong>비난에 맞장구치거나 특별대우하지 않는다.</strong> 수치심을 과도하게 자극하지 않으면서 행동의 책임과 관계의 경계를 함께 다룬다.</p></div></div><p class="care-recovery"><strong>새로운 관계 경험</strong> · 상담자도 실수를 인정하며 자기 존중을 유지한다. 서로 불완전해도 관계를 회복할 수 있음을 경험한다.</p></div><div class="foot"><button data-open="sources">교재 253–254·257–261쪽 · 4주차 수업자료 18·25–26·32–34쪽</button><span class="page">12 / 15</span></div></section>
 <section class="slide enriched " data-title="감별진단: 비슷한 모습, 다른 중심 문제" data-seconds="100" data-phase="Ⅳ. 비교와 정리" hidden aria-labelledby="title13"><div class="eyebrow"><span class="phase">Ⅳ. 비교와 정리</span><span>13</span></div><h2 id="title13"><span class="title-concept">감별진단</span><span class="title-question">비슷한 모습, 다른 중심 문제</span></h2><p class="lead">같은 과시·완벽주의·자기비판도, 무엇을 지키려는 행동인지에 따라 이해가 달라진다.</p><div class="body">
 <table class="differential"><thead><tr><th>비교 대상 · 닮은 모습</th><th>자기애성 역동의 중심</th><th>비교 성격의 중심</th></tr></thead><tbody>
 <tr><td>정신병질성<small>과대함·타인 폄하</small></td><td>인정을 확보하고 무가치감·수치심을 피하려는 <strong class="comparison-key">자기 가치의 문제</strong>.</td><td><strong class="comparison-key">힘과 지배·타인 이용</strong>의 문제가 중심이 되는지 살핀다. 공감에 대한 반응과 관계 양상도 비교한다.</td></tr>
@@ -255,7 +298,7 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 <section class="slide references-slide" data-title="참고문헌" data-seconds="0" data-phase="참고문헌" hidden aria-labelledby="title15"><div class="eyebrow"><span class="phase">참고문헌</span><span>15</span></div><h2 id="title15">참고문헌</h2><div class="body reference-columns">
 <div class="reference-column">
 <div class="reference-group"><h3>교재·수업자료</h3><ul class="reference-list">
-<li><strong>Nancy McWilliams</strong><br>『정신분석적 진단: 성격구조의 이해』<small>자기애성 성격: 241–266쪽 · 성격 조직 수준: 75·85쪽</small></li>
+<li><strong>Nancy McWilliams</strong><br>『정신분석적 진단: 성격구조의 이해』<small>자기애성 성격: 241–266쪽 · 성격 조직 수준: 75·85쪽 · 원시적 방어: 147–149쪽</small></li>
 <li><strong>4주차 수업자료 「자기애성 성격」</strong><small>6–18·23–26·29–34·38–39쪽</small></li>
 </ul></div>
 <div class="reference-group"><h3>사례 영상 · C-SPAN</h3><ul class="reference-list">
@@ -276,7 +319,7 @@ table{font-size:24px;line-height:1.5}th{font-size:20px}td{padding:23px 22px}td:f
 </div>
 <div class="screenreader" id="announcement" aria-live="polite"></div>
 <dialog id="outlineDialog"><div class="dialog-top"><h2>발표 순서</h2><button data-close>닫기 Esc</button></div><div class="outline" id="outlineList"></div></dialog>
-<dialog id="sources" class="sources"><div class="dialog-top"><h2>참고자료</h2><button data-close>닫기 Esc</button></div><h3>수업·교재</h3><ul><li>수업자료 「자기애성 성격」 · 자기 가치와 방어 6–18쪽, 전이·역전이 23–26쪽, 성격 조직과 치료·비교 29–34·38–39쪽.</li><li>Nancy McWilliams, 『정신분석적 진단: 성격구조의 이해』, 자기애성 성격 장 · 자기애성 성격: 241–266쪽 · 성격 조직 수준: 75·85쪽.</li></ul><h3>공개 사례 자료</h3><ul><li><a href="https://www.youtube.com/watch?v=541Cg2Jnb8s&t=65s" target="_blank" rel="noopener">C-SPAN · 매케인 관련 발언</a> — 01:05–02:09, 64초.</li><li><a href="https://www.youtube.com/watch?v=lzlxrPC_E_U&t=92s" target="_blank" rel="noopener">C-SPAN · President Trump: “I am the chosen one.”</a> — 2019-08-21, 01:32–01:46, 14초.</li><li><a href="https://www.pbs.org/wgbh/frontline/article/trump-the-bully-how-childhood-military-school-shaped-the-future-president/" target="_blank" rel="noopener">S1. PBS FRONTLINE · Trump the ‘Bully’: How Childhood & Military School Shaped the Future President</a> (2020-09-22). <a href="https://www.pbs.org/wgbh/frontline/interview/gwenda-blair/" target="_blank" rel="noopener">S2. Gwenda Blair 인터뷰</a> 및 <a href="https://www.pbs.org/wgbh/frontline/interactive/clinton-trump-keys-to-their-characters/" target="_blank" rel="noopener">군사학교 관련 보도</a> 참조.</li><li><a href="https://www.pbs.org/wgbh/frontline/article/donald-trump-roy-cohn-race-discrimination-lawsuit-fight-documentary-excerpt/" target="_blank" rel="noopener">S3. PBS FRONTLINE · ‘All About the Fight’: How Donald Trump Developed His Political Playbook</a> (2024-09-24). 로이 콘의 영향과 공격적 대응에 관한 보도.</li><li><a href="https://www.pbs.org/wgbh/frontline/documentary/president-trump/" target="_blank" rel="noopener">S4. PBS FRONTLINE · President Trump</a> · 사업과 대중매체 속 자기표현.</li><li><a href="https://develop.mercurynews.com/2020/07/19/leonard-pitts-jr-what-ruined-donald-trump" target="_blank" rel="noopener">S5. Leonard Pitts Jr. · What ruined Donald Trump</a> (2020-07-19), The Mercury News. 메리 트럼프 회고록을 소개한 칼럼: 아버지의 “bus driver in the sky” 표현.</li><li><a href="https://montauklibrary.org/throwback-thursday-fred-trump" target="_blank" rel="noopener">S6. Montauk Library · Throwback Thursday–Fred Trump</a> (2020-10-01). TWA 조종사 경력, 알코올 문제와 1981년 42세 사망.</li></ul></dialog>
+<dialog id="sources" class="sources"><div class="dialog-top"><h2>참고자료</h2><button data-close>닫기 Esc</button></div><h3>수업·교재</h3><ul><li>수업자료 「자기애성 성격」 · 자기 가치와 방어 6–18쪽, 전이·역전이 23–26쪽, 성격 조직과 치료·비교 29–34·38–39쪽.</li><li>Nancy McWilliams, 『정신분석적 진단: 성격구조의 이해』, 자기애성 성격 장 · 자기애성 성격: 241–266쪽 · 성격 조직 수준: 75·85쪽 · 원시적 방어: 147–149쪽.</li></ul><h3>공개 사례 자료</h3><ul><li><a href="https://www.youtube.com/watch?v=541Cg2Jnb8s&t=65s" target="_blank" rel="noopener">C-SPAN · 매케인 관련 발언</a> — 01:05–02:09, 64초.</li><li><a href="https://www.youtube.com/watch?v=lzlxrPC_E_U&t=92s" target="_blank" rel="noopener">C-SPAN · President Trump: “I am the chosen one.”</a> — 2019-08-21, 01:32–01:46, 14초.</li><li><a href="https://www.pbs.org/wgbh/frontline/article/trump-the-bully-how-childhood-military-school-shaped-the-future-president/" target="_blank" rel="noopener">S1. PBS FRONTLINE · Trump the ‘Bully’: How Childhood & Military School Shaped the Future President</a> (2020-09-22). <a href="https://www.pbs.org/wgbh/frontline/interview/gwenda-blair/" target="_blank" rel="noopener">S2. Gwenda Blair 인터뷰</a> 및 <a href="https://www.pbs.org/wgbh/frontline/interactive/clinton-trump-keys-to-their-characters/" target="_blank" rel="noopener">군사학교 관련 보도</a> 참조.</li><li><a href="https://www.pbs.org/wgbh/frontline/article/donald-trump-roy-cohn-race-discrimination-lawsuit-fight-documentary-excerpt/" target="_blank" rel="noopener">S3. PBS FRONTLINE · ‘All About the Fight’: How Donald Trump Developed His Political Playbook</a> (2024-09-24). 로이 콘의 영향과 공격적 대응에 관한 보도.</li><li><a href="https://www.pbs.org/wgbh/frontline/documentary/president-trump/" target="_blank" rel="noopener">S4. PBS FRONTLINE · President Trump</a> · 사업과 대중매체 속 자기표현.</li><li><a href="https://develop.mercurynews.com/2020/07/19/leonard-pitts-jr-what-ruined-donald-trump" target="_blank" rel="noopener">S5. Leonard Pitts Jr. · What ruined Donald Trump</a> (2020-07-19), The Mercury News. 메리 트럼프 회고록을 소개한 칼럼: 아버지의 “bus driver in the sky” 표현.</li><li><a href="https://montauklibrary.org/throwback-thursday-fred-trump" target="_blank" rel="noopener">S6. Montauk Library · Throwback Thursday–Fred Trump</a> (2020-10-01). TWA 조종사 경력, 알코올 문제와 1981년 42세 사망.</li></ul></dialog>
 <script>
 'use strict';
 const slides=[...document.querySelectorAll('.slide')];
